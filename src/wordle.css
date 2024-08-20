@@ -1,0 +1,33 @@
+body {
+  font-family: monospace;
+}
+
+#words td {
+  font-size: 20px;
+  width: 50px;
+  height: 50px;
+  color: white;
+  background-color: black;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.correct {
+  background-color: forestgreen !important;
+}
+
+.present {
+  background-color: goldenrod !important;
+}
+
+#guess-form {
+  margin-left: auto;
+  margin-right: auto;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.center{
+  margin-left: auto;
+  margin-right: auto;
+}
