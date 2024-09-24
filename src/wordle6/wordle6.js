@@ -88,7 +88,7 @@ function handleSubmit(evt) {
 function tryWord(guess) {
   console.log("tryWord", guess);
   if (guess.length !== WORD_LENGTH || !(validWords.includes(guess))) {
-    document.getElementById("hype").innerHTML="Please enter a six letter english word!";
+    document.getElementById("alert").innerHTML="Please enter a six letter english word!";
   }
   if (!validWords.includes(guess)) return console.error("Invalid word!", guess);
 

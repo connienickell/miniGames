@@ -1,30 +1,36 @@
-<html lang="en">
-<head>
-  <title>Rithm Wordle!</title>
-  <link rel="stylesheet" href="wordle5.css">
-</head>
-<body>
-  <h1 class="center" id="title"> Wordle erdle </h1>
+<!DOCTYPE html>  
+  <html lang="en">
+    <head>
+      <title>Rithm Wordle 5</title>
+      <link rel="stylesheet" href="wordle5.css">
+    </head>
+    <body>
+    
+      <a href="../home.html">
+        <button style="font-size: 12px; background-color: black; color: white; border-radius: 10px; width: 100px; height: 20px; font-family: fantasy;">Home</button>
+      </a>
+      
+      <h1 class="center" id="title">Wordle 5</h1>
 
-<table id="words" class="center">
-  <tr><td></td><td></td><td></td><td></td><td></td></tr>
-  <tr><td></td><td></td><td></td><td></td><td></td></tr>
-  <tr><td></td><td></td><td></td><td></td><td></td></tr>
-  <tr><td></td><td></td><td></td><td></td><td></td></tr>
-  <tr><td></td><td></td><td></td><td></td><td></td></tr>
-  <tr><td></td><td></td><td></td><td></td><td></td></tr>
-</table>
+      <table id="words" class="center">
+        <tr><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td></td><td></td><td></td><td></td><td></td></tr>
+      </table>
 
-<form id="guess-form">
-  <input type="text" id="guess" maxlength="5" autofocus>
-  <button>Guess</button>
-</form>
+      <form id="guess-form">
+        <input type="text" id="guess" maxlength="5" autofocus>
+        <button>Guess</button>
+      </form>
 
-<script src="words5.js"></script>
-<script src="wordle5.js"></script>
+      <script src="words5.js"></script>
+      <script src="wordle5.js"></script>
 
-<div id="hype"></div>
+      <div id="alert"></div>
 
 
-</body>
-</html>
+    </body>
+    </html>

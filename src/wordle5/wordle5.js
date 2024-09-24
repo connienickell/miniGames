@@ -60,7 +60,7 @@ function scoreGuess(guess, secret) {
   return results;
 }
 
-
+ 
 /** Handle form submit.
  * - Score word and update the DOM to reflect score
  */
@@ -88,10 +88,10 @@ function handleSubmit(evt) {
 function tryWord(guess) {
   console.log("tryWord", guess);
   if (guess.length !== 5 || !(validWords.includes(guess))) {
-    document.getElementById("hype").innerHTML="Please enter a five letter english word!";
+    document.getElementById("alert").innerHTML="Please enter a five letter english word!";
   }
     else if (guess.length == WORD_LENGTH && (validWords.includes(guess))) {
-      document.getElementById("hype").innerHTML=" ";
+      document.getElementById("alert").innerHTML=" ";
   }
   if (!validWords.includes(guess)) return console.error("Invalid word!", guess);
 
