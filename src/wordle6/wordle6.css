@@ -1,0 +1,54 @@
+body {
+  font-family: monospace;
+  background-color: black;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100vh; /* Full viewport height */
+  margin: 0; /* Remove default margin */
+  flex-direction: column;
+}
+
+#words td {
+  font-size: 20px;
+  width: 50px;
+  height: 50px;
+  color: black;
+  font-weight: bold;
+  background-color: white;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: fantasy;
+}
+
+#title {
+  font-family: fantasy;
+  color: white;
+}
+
+.correct {
+  background-color: rgb(131, 199, 131) !important;
+}
+
+.present {
+  background-color: rgb(255, 214, 110) !important;
+}
+
+#guess-form {
+  margin-left: auto;
+  margin-right: auto;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: fantasy;
+}
+
+.center{
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+}
+
+#hype {
+  color: white;
+  font-family: fantasy;
+}

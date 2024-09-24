@@ -3,7 +3,7 @@
 /** Wordle regular version. */
 
 const NUM_GUESSES = 6;
-const WORD_LENGTH = 5;
+const WORD_LENGTH = 6;
 
 let numGuess;
 let secret;
@@ -33,7 +33,7 @@ function scoreGuess(guess, secret) {
   const secretLetters = secret.split("");
 
   // This is the results array that will be returned
-  const results = ["", "", "", "", ""];
+  const results = ["", "", "", "", "", ""];
 
   // First, for letters in correct place, mark as such in results and remove
   // the letter from the secret
@@ -75,6 +75,7 @@ function handleSubmit(evt) {
 
   // Get word & lowercase it (in case player entered it in UPPER case)
   const $guess = document.querySelector("#guess").value.toLowerCase();
+  console.log($guess);
   tryWord($guess);
   document.querySelector("#guess").value = "";
 }
@@ -86,8 +87,11 @@ function handleSubmit(evt) {
 
 function tryWord(guess) {
   console.log("tryWord", guess);
-
+  if (guess.length !== WORD_LENGTH || !(validWords.includes(guess))) {
+    document.getElementById("hype").innerHTML="Please enter a six letter english word!";
+  }
   if (!validWords.includes(guess)) return console.error("Invalid word!", guess);
+
 
   const results = scoreGuess(guess, secret);
   updateBoard(guess, results);
