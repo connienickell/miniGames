@@ -2,7 +2,7 @@
 
 /** Wordle regular version. */
 
-const NUM_GUESSES = 6;
+const NUM_GUESSES = 7; // changed num_guesses to 7
 const WORD_LENGTH = 6;
 
 let numGuess;
@@ -89,6 +89,9 @@ function tryWord(guess) {
   console.log("tryWord", guess);
   if (guess.length !== WORD_LENGTH || !(validWords.includes(guess))) {
     document.getElementById("alert").innerHTML="Please enter a six letter english word!";
+  }    
+  else if (guess.length == WORD_LENGTH && (validWords.includes(guess))) {
+    document.getElementById("alert").innerHTML=" ";
   }
   if (!validWords.includes(guess)) return console.error("Invalid word!", guess);
 
