@@ -1571,8 +1571,7 @@ const validWords = [
   "zurfs", "zuzim", "zygal", "zygon", "zymes", "zymic",
 ];
 
-const possibleSecrets = [
-  "abbey", "abide", "about", "above", "abuse", "acids", "acorn", "acres",
+const possibleSecrets = ["abbey", "abide", "about", "above", "abuse", "acids", "acorn", "acres",
   "acted", "actor", "acute", "adapt", "added", "admin", "admit", "adobe",
   "adopt", "adult", "after", "again", "agent", "agile", "aging", "agree",
   "ahead", "aided", "aides", "aimed", "aired", "aisle", "alamo", "alarm",

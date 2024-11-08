@@ -1,0 +1,36 @@
+
+body {
+    font-family: fantasy;
+    text-align: center;
+    background-color: black;
+}
+
+h1 {
+    font-family: fantasy;
+    color: white;
+}
+
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+#squares td {
+    font-size: 40px;
+    width: 100px;
+    height: 100px;
+    color: black;
+    font-weight: bold;
+    background-color: white;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: fantasy;
+    border: 15px black;
+  }
+
+  .center {
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+  }

@@ -1,0 +1,31 @@
+body {
+    font-family: fantasy;
+    text-align: center;
+}
+
+h1 {
+    font-family: fantasy;
+}
+
+.container {
+    display: flex;
+    object-fit: contain;
+    padding: 10px;
+    width: 80%;
+    height: 70vh;
+    justify-content: center;
+    margin: auto;
+}
+
+.item {
+    display: flex
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+#guess-form {
+    text-align: center;
+}
